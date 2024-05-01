@@ -110,7 +110,7 @@ ul{
 
 .tj-menu-area li {
     position: relative;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .tj-menu-area li > a {
@@ -749,6 +749,10 @@ ul{
     line-height: 2.5;
 }
 
+.left-about-content img, .right-about-content img{
+    width: 100%;
+}
+
 
 /* MANUFACTURING PAGES CSS START */
 
@@ -1087,4 +1091,501 @@ ul{
 
 .related-blog__container {
     background-color: #f0f8ff;
+}
+
+
+
+/********** MOBILE HEADER ************/
+
+
+.mobile-header{
+    display: none;
+}
+
+.mobile-menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* mobile menu css */
+
+.canva_expander {
+    cursor: pointer;
+    display: block;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+}
+
+.canva_expander span {
+    height: 2px;
+    width: 35px;
+    display: block;
+    background: #002155;
+    cursor: pointer;
+    list-style: none;
+    margin: 8px 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    margin-left: auto;
+}
+
+.canva_expander span.dot2 {
+    width: 27px;
+}
+
+.canva_expander span.dot4 {
+    width: 22px;
+}
+
+
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    /* line-height: 20px; */
+    padding: 5px;
+    /* border-radius: 5px; */
+    color: #fff;
+    border: 0;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    z-index: 1111;
+    background: none;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:5px;
+  right:15px;
+  padding:7px 15px 0px 15px;
+  color:#002155;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:22222;
+}
+.menu{z-index:1111; font-weight:bold; font-size:16px; width:100%; background-color: #fff;  position:absolute; text-align:center; font-size:12px; top: 0; left: 0;min-height: 100%;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none; padding-top: 80px;}
+.menu li {display: block;   padding:20px 0 20px 0;  font-weight: 700;}
+.menu li:hover{display: block;    background-color: #fff;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#002155;font-size: 14px;}
+.menu ul li a:hover {  color: #002155; text-decoration:none;}
+.menu a{text-decoration:none; color:#002155;}
+
+.nav__sub li{
+    padding: 10px 0px !important;
+}
+
+.fa-chevron-right{
+    font-size: 12px;
+}
+
+.glyphicon-home{
+  color: #002155; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+
+.nav__item , .nav__item {
+	margin-top: 10px;
+}
+
+.menu ul .nav__link {
+	font-weight: 600;
+	color: #002155;
+    /* font-family: 'myregularfont'; */
+	text-decoration: none;
+}
+
+.menu ul .nav__sub {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background-color: #fff;
+  color: #002155;
+	opacity: 0;
+	display: none;
+	transition: all 0.35s ease-in-out;
+	transform: translateX(100%);
+}
+
+.menu ul .nav__sub.is-active {
+  opacity: 1;
+  display: block;
+  transform: translateX(0%);
+}
+
+.menu ul .nav__sub {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 15px;
+	list-style-type: none;
+}
+
+.contact-btn-mobile{
+    border-radius: 50px;
+    display: flex;
+    margin: 0 auto;
+    width: max-content;
+    border: 1px solid #002155;
+    padding: 10px 20px !important;
+    margin-top: 10px;
+}
+
+
+.hamburger, .cross, .menu{
+  display: none;
+}
+
+
+@media screen and (max-width:450px) {
+
+    #header, .third-party__item:not(:last-child)::before{
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    p, .why-us__content, .purpose-content, .left__contact-page p, .left-home p, .left-manufacturing__content p  {
+        font-size: 13px;
+        text-align: justify;
+        line-height: normal;
+    }
+
+    .section--lg {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .secondary-heading, .left-about .secondary-heading, .left__contact-page .secondary-heading, .articles__container .secondary-heading, .right-blog-main .secondary-heading, .manufacturing-header__container .secondary-heading, .manufacturing-header__container .secondary-heading{
+        font-size: 20px;
+        margin: 15px 0px;
+    }
+
+    .blog-content-title h4{
+        font-size: 20px;
+    }
+
+    .left-about .secondary-heading, .left__contact-page .secondary-heading{
+        text-align: justify !important;
+    }
+
+    .manufacturing-header__container  .secondary-heading{
+        width: 100%;
+    }
+
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    .about-content__container .container, .blog-main__inner .container{
+        gap: 0;
+    }
+
+    .left__contact-page ul li{
+        font-size: 13px;
+    }
+
+    .left__contact-page ul li span {
+        font-size: 12px;
+    }
+
+    .right__contact-page, .manufacturing__content-inner {
+        padding: 20px;
+    }
+
+    .left-home h1 {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .step-img img{
+        padding-top: 0;
+    }
+
+    .blue-tag-inner {
+        padding: clamp(1rem, 2.4722222222vw, 3rem) clamp(1rem, 5vw, 4rem);
+    }
+
+    .left-blog-main img {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .blog-main__inner{
+        padding: 20px;
+    }
+
+    .small-title {
+        font-size: 18px;
+    }
+
+    .contact__banner h2, .blue-tag-inner h2{
+        font-size: 18px;
+    }
+
+    .right-blog-main, .blog-grid__item-content {
+        padding: 20px;
+    }
+
+    .blog-header-banner img{
+        height: auto;
+    }
+
+    .blog-content-title {
+        padding: 20px 0px;
+    }
+
+    .blog-content-desc {
+        margin-top: 30px;
+        max-width: 780px;
+        margin-bottom: 30px;
+        font-size: 13px;
+        width: auto;
+        line-height: normal;
+    }
+
+    .third-party__item p{
+        text-align: center;
+    }
+
+    .third-party__item ul{
+        list-style: none;
+        text-align: center !important;
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .third-party__item{
+        gap: 10px;
+    }
+
+    .third-party__inner{
+        gap: 30px;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        font-size: 13px;
+    }
+
+    .related-blog__container .container {
+        padding: 0;
+    }
+
+    .footer__container .navigations, .copyright, .third-party__inner {
+        flex-direction: column;
+    }
+
+    .third-party__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .social-accounts {
+        margin-top: 25px;
+    }
+
+    .navigations ul{
+        padding: 0;
+    }
+
+    .copyright p{
+        font-size: 12px;
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+
+    #header, .third-party__item:not(:last-child)::before{
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    p, .why-us__content, .purpose-content, .left__contact-page p, .left-home p, .left-manufacturing__content p  {
+        font-size: 14px;
+        text-align: justify;
+        line-height: normal;
+    }
+
+    .section--lg {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .secondary-heading, .left-about .secondary-heading, .left__contact-page .secondary-heading, .articles__container .secondary-heading, .right-blog-main .secondary-heading, .manufacturing-header__container .secondary-heading, .manufacturing-header__container .secondary-heading{
+        font-size: 24px;
+        margin: 15px 0px;
+    }
+
+    .blog-content-title h4{
+        font-size: 20px;
+    }
+
+    .left-about .secondary-heading, .left__contact-page .secondary-heading{
+        text-align: justify !important;
+    }
+
+    .manufacturing-header__container  .secondary-heading{
+        width: 100%;
+    }
+
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    .blog-main__inner .container{
+        min-height: 335px;
+    }
+
+    .about-content__container .container, .blog-main__inner .container{
+        gap: 0;
+    }
+
+    .left__contact-page ul li{
+        font-size: 13px;
+    }
+
+    .left__contact-page ul li span {
+        font-size: 12px;
+    }
+
+    .right__contact-page, .manufacturing__content-inner {
+        padding: 20px;
+    }
+
+    .left-home h1 {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .step-img img{
+        padding-top: 0;
+    }
+
+    .blue-tag-inner {
+        padding: clamp(1rem, 2.4722222222vw, 3rem) clamp(1rem, 5vw, 4rem);
+    }
+
+    .left-blog-main img {
+        width: 100%;
+    }
+
+    .blog-grid__item-img {
+        height: auto;
+    }
+
+    .blog-grid__item{
+        height: 430px;
+    }
+
+    .blog-grid__item-content {
+        height: calc(100% - 180px);
+    }
+
+    .blog-main__inner{
+        padding: 20px;
+    }
+
+    .small-title {
+        font-size: 18px;
+    }
+
+    .contact__banner h2, .blue-tag-inner h2{
+        font-size: 18px;
+    }
+
+    .right-blog-main, .blog-grid__item-content {
+        padding: 20px;
+    }
+
+    .blog-header-banner img{
+        height: auto;
+    }
+
+    .blog-content-title {
+        padding: 20px 0px;
+    }
+
+    .blog-content-desc {
+        margin-top: 30px;
+        max-width: 780px;
+        margin-bottom: 30px;
+        font-size: 13px;
+        width: auto;
+        line-height: normal;
+    }
+
+    .third-party__item p{
+        text-align: center;
+    }
+
+    .third-party__item ul{
+        list-style: none;
+        text-align: center !important;
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .third-party__item{
+        gap: 10px;
+    }
+
+    .third-party__inner{
+        gap: 30px;
+    }
+
+    .footer__container {
+        display: flex;
+        gap: 10px;
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+
+    .related-blog__container .container {
+        padding: 0;
+    }
+
+    .third-party__inner {
+        flex-direction: column;
+    }
+
+    .third-party__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .social-accounts {
+        margin-top: 25px;
+    }
+
+    .navigations ul{
+        padding: 0;
+    }
+
+    .copyright p{
+        font-size: 12px;
+    }
+    
 }
