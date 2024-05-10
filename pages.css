@@ -21,7 +21,7 @@ ul{
 }
 
 .section--lg{
-    padding: 50px 0px 80px 0px;
+    padding: 80px 0px 50px 0px;
 }
 
 .common-heading {
@@ -166,7 +166,9 @@ ul{
     left: 50%;
     visibility: hidden;
     transform: translateX(-50%);
-    width: 352px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 750px;
     z-index: 1;
     border-radius: 10px;
     background-color: #fff;
@@ -634,6 +636,14 @@ ul{
     padding-top: 50px;
 }
 
+.sc-ff .benefits-of-service{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.benefits-of-service p{
+    margin: 0;
+}
+
 .bos__item {
     padding: 20px;
     border: 1px solid #002155;
@@ -650,6 +660,35 @@ ul{
     background-color: #fff;
 }
 
+.work-flow-inner{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.work-flow-inner .card {
+    border: none;
+    border-radius: 100px 100px 10px 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    text-align: center;
+    gap: 30px;
+    padding: 50px 15px 15px 15px;
+}
+
+.work-flow-inner .card img {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.work-flow-inner .card .card-body {
+    padding: 0;
+}
+
+.work-flow-inner .card .card-text {
+    margin: 0;
+    font-size: 14px;
+}
 
 .contact__banner {
     background-color: #0a20a0;
@@ -693,6 +732,37 @@ ul{
     color: #fbdd4d;
     font-weight: 800;
     text-align: center;
+}
+
+.key-points__container {
+    background-color: #f0f8ff;
+}
+
+.key-points__container .container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.gray-color{
+    color: #4a4a4a;
+}
+
+.key-points__item {
+    padding: 15px;
+    border: 1px solid #002155;
+    border-radius: 20px;
+}
+
+.key-points-pc__container .cards__container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.key-points-pc__container .cards__container .card-item{
+    background-color: #fbdb4d;
 }
 
 /* ABOUT PAGE CSS */
@@ -753,6 +823,45 @@ ul{
     width: 100%;
 }
 
+.truly-global-inner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+
+.card-item{
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 50px 30px;
+}
+
+.card-item img {
+    width: 80px;
+    height: 80px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: left center;
+    object-position: left center;
+    margin-bottom: 20px;
+}
+
+.ex-process__container{
+    background-color: #f0f8ff;
+}
+
+.gs-process-img img{
+    width: 100%;
+}
+
+.ex-process__container img{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+}
 
 /* MANUFACTURING PAGES CSS START */
 
@@ -815,6 +924,20 @@ ul{
     margin: 0;
 }
 
+.pp-mats .third-party__item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    gap: 10px;
+}
+
+.pp-mats .third-party__inner{
+    gap: 25px;
+}
+
+.pp-mats .third-party__item:not(:last-child)::before{
+    display: none;
+}
+
 .third-party__item:not(:last-child)::before {
     content: "";
     display: block;
@@ -856,6 +979,13 @@ ul{
 
 
 /* BLOG PAGE CSS START */
+
+.blogs-title {
+    color: #002155;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
 
 .article-header .header__container{
     background-color: #f0f8ff;
@@ -1093,7 +1223,39 @@ ul{
     background-color: #f0f8ff;
 }
 
+.article-tabs-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
+.TabButton {
+  color: #0a20a0;
+  border: 0;
+  border-bottom: 2px solid #abb8c3;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.TabButtonSelected {
+  color: #002155 !important;
+  border-bottom-color: #0a20a0 !important;
+  font-weight: 600;
+}
+
+.d-chart-n {
+display: none;
+}
+
+.d-chart-show {
+display: block;
+}
+
+.tab-section{
+    padding-top: 50px;
+}
 
 /********** MOBILE HEADER ************/
 
@@ -1375,6 +1537,19 @@ ul{
 
     .third-party__inner{
         gap: 30px;
+    }
+
+    .article-tabs-title >div {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .TabButton {
+        font-size: 13px;
+    }
+
+    .article-tabs-title{
+        flex-direction: column;
     }
 
     .footer__container {

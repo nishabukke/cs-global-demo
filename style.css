@@ -161,7 +161,9 @@ ul{
     left: 50%;
     visibility: hidden;
     transform: translateX(-50%);
-    width: 352px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 750px;
     z-index: 1;
     border-radius: 10px;
     background-color: #fff;
@@ -429,6 +431,80 @@ ul{
 .left-home .contact-btn span {
     margin-right: 15px;
 }
+
+.form-modal{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* popup-form css start */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+
+  .modal-content form {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    align-items: center;
+  }
+
+  .modal-content form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .modal-content form .form-group input{
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .modal-content form .form-group input:focus{
+    outline: none;
+    border-width: 2px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* popup-form css end */
 
 .right-home video{
     width: 100%;
