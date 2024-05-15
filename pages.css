@@ -497,7 +497,7 @@ ul{
     font-size: 22px;
 }
 
-.right__contact-page input, .right__contact-page textarea {
+.right__contact-page .contact-input input, .right__contact-page .contact-input textarea {
     background-color: #fcfcfc;
     border: 1px solid #e8e8e8;
     box-shadow: none;
@@ -511,7 +511,7 @@ ul{
     width: 100%;
 }
 
-.right__contact-page input:focus, .right__contact-page textarea:focus{
+.right__contact-page .contact-input input:focus, .right__contact-page .contact-input textarea:focus{
     outline: none;
     border: 2px solid #e8e8e8;
 }
@@ -627,6 +627,23 @@ ul{
 .step-img img {
     width: 100%;
     padding-top: 50px;
+}
+
+.advantages-gs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.adv-item{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.gs-services__container img{
+    width: 100%;
 }
 
 .benefits-of-service {
@@ -765,6 +782,27 @@ ul{
     background-color: #fbdb4d;
 }
 
+.expediting-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.expediting-content-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fbdb4d;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.expediting-content-item ul{
+    padding: 0;
+    list-style-type: none;
+    font-weight: 500;
+}
+
 /* ABOUT PAGE CSS */
 
 .about__container{
@@ -893,6 +931,17 @@ ul{
     z-index: 3;
 }
 
+.manufacturing__content-inner.casting-forging{
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    align-items: start;
+} 
+
+.manufacturing__content-inner.casting-forging p{
+    line-height: 2;
+    font-size: 14px;
+}
+
 .left-manufacturing__content p{
     line-height: 2.3;
 }
@@ -918,10 +967,40 @@ ul{
     align-items: center;
     text-align: center;
     gap: 20px;
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     padding: 0 clamp(1.875rem, 4.5138888889vw, 4.0625rem);
     margin: 0;
+}
+
+.fs__container .third-party__item, .fab__container .third-party__item, .st__container .third-party__item{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.sf__container .third-party__item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.product-gallery__container .swiper img{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0px 20px rgba(0,0,0,.1);;
+}
+
+.product-gallery__container .swiper{
+    padding: 50px 0px;
+}
+
+.product-gallery__container .swiper-pagination-bullet-active {
+    background: #0a20a0;
+}
+
+.product-gallery__container .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
 }
 
 .pp-mats .third-party__item{
@@ -955,8 +1034,16 @@ ul{
     height: 650px;
 }
 
+.fs__container .third-party__item:not(:last-child)::before {
+    height: 450px;
+}
+
+.fs__container .third-party__item, .fab__container .third-party__item, .st__container .third-party__item{
+    padding: 0 clamp(1rem, 4vw, 1rem);
+}
+
 .fab__container .third-party__item:not(:last-child)::before {
-    height: 500px;
+    height: 900px;
 }
 
 .third-party__item h5{
@@ -976,6 +1063,14 @@ ul{
 .types-table__container .faint-blue-bg{
     top: -50%;
 }
+
+.forging-solutions-inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
 
 
 /* BLOG PAGE CSS START */
@@ -1122,11 +1217,11 @@ ul{
     flex: 0 0 100%;
     max-width: 100%;
     color: #002155;
-    height: 560px;
+    height: 460px;
 }
 
 .blog-grid__item-img {
-    height: 305px;
+    height: 200px;
     border-radius: 21px 21px 0 0;
 }
 
@@ -1140,7 +1235,7 @@ ul{
     display: flex;
     padding: 30px;
     width: 100%;
-    height: calc(100% - 300px);
+    height: calc(100% - 240px);
     background-color: #fff;
     transition: all .5s;
     position: absolute;
@@ -1373,6 +1468,7 @@ display: block;
 	top: 0;
 	right: 0;
 	width: 100%;
+    height: 100vh;
 	background-color: #fff;
   color: #002155;
 	opacity: 0;
@@ -1430,6 +1526,22 @@ display: block;
         padding: 30px 30px 30px 30px;
     }
 
+    .blog-header-banner.section--lg {
+        padding: 0px 0px 30px 0px;
+    }
+
+    .contact-page__container>.container-fluid{
+        padding: 0;
+    }
+
+    .right__contact-page input, .right__contact-page textarea{
+        padding: 9px 15px;
+    }
+
+    .contact-input label{
+        font-size: 13px;
+    }
+
     .secondary-heading, .left-about .secondary-heading, .left__contact-page .secondary-heading, .articles__container .secondary-heading, .right-blog-main .secondary-heading, .manufacturing-header__container .secondary-heading, .manufacturing-header__container .secondary-heading{
         font-size: 20px;
         margin: 15px 0px;
@@ -1447,9 +1559,17 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner {
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
+    }
+
+    .work-flow-inner .card {
+        padding: 20px 15px 15px 15px;
+    }
+
+    .work-flow-inner .card img {
+        width: 100px;
     }
 
     .about-content__container .container, .blog-main__inner .container{
@@ -1597,8 +1717,12 @@ display: block;
         display: block;
     }
 
+    ul li{
+        font-size: 13px;
+    }
+
     p, .why-us__content, .purpose-content, .left__contact-page p, .left-home p, .left-manufacturing__content p  {
-        font-size: 14px;
+        font-size: 13px;
         text-align: justify;
         line-height: normal;
     }
@@ -1744,11 +1868,13 @@ display: block;
 
     .third-party__inner {
         flex-direction: column;
+        padding: clamp(1rem, 2vw, 1rem) 0;
     }
 
-    .third-party__item {
+    .third-party__item , .fab__container .third-party__item, .st__container .third-party__item, .sf__container .third-party__item{
         flex: 0 0 100%;
         max-width: 100%;
+        padding: 0 clamp(1rem, 4.5138888889vw, 4rem);
     }
 
     .social-accounts {
