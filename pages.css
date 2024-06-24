@@ -803,6 +803,19 @@ ul{
     font-weight: 500;
 }
 
+.ds-graphic__container .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 40px;
+}
+
+.ds-graphic__container .container img{
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+}
+
 /* ABOUT PAGE CSS */
 
 .about__container{
@@ -940,6 +953,9 @@ ul{
         padding: 50px 30px;
 }
 
+.product-gallery__container.pre-engg-product .swiper img {
+    height: 250px;
+}
 
 /* INDUSTRIAL FABRICATION CSS START */
 
@@ -1491,7 +1507,7 @@ ul{
 
 .blog-header-banner img {
     width: 100%;
-    height: clamp(13.75rem, 24.3055555556vw, 21.875rem);
+    height: clamp(30rem, 30vw, 21rem);
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -1761,7 +1777,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner {
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner, .ds-graphic__container .container {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
@@ -1954,7 +1970,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner{
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner, .ds-graphic__container .container{
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
