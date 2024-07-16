@@ -46,7 +46,7 @@ ul{
 
 .small-title{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .secondary-btn {
@@ -93,10 +93,8 @@ ul{
     margin: 1rem 0rem;
 }
 
-.logo a{
-    font-weight: 800;
-    font-size: 24px;
-    color: #0a20a0;
+.logo a img{
+    width: 100px;
 }
 
 .tj-menu-area  .main-nav {
@@ -137,7 +135,7 @@ ul{
 }
 
 .tj-menu-area .has-dropdown:hover .sub-menu,  .tj-menu-area .has-dropdown:hover .dropdown-grid{
-    top: calc(100% - -20px);
+    top: calc(100% - -15px);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -891,8 +889,8 @@ ul{
 }
 
 .card-item img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: left center;
@@ -1043,53 +1041,14 @@ ul{
 
 .awards-photos-inner{
     display: grid;
-    grid-template-columns: 3.5fr 8.5fr;
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
 }
 
 .awards-photos-inner img{
     width: 100%;
-}
-
-.left-award-photo img{
-    height: 620px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-}
-
-.right-award-photo.upper, .left-award-photo.lower{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 20px;
-}
-
-.right-award-photo.upper img, .left-award-photo.lower img{
-    height: 300px;
-}
-
-.right-award-photo.lower img{
-    height: 620px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.upper-right-photo img{
-    border-top-right-radius: 40px;
-}
-
-.lower-right-photo img{
-    border-bottom-right-radius: 40px;
-}
-
-.awards-photos-inner-lower{
-    display: grid;
-    grid-template-columns: 8.5fr 3.5fr;
-    gap: 20px;
-    margin-top: 50px;
-}
-
-.awards-photos-inner-lower img{
-    width: 100%;
+    height: 250px;
+    border-radius: 20px;
 }
 
 
@@ -1288,6 +1247,198 @@ ul{
     gap: 30px;
     margin-top: 40px;
 }
+
+
+/* gallery page css start */
+
+.gallery ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+  }
+
+  .gallery ul{
+    list-style: none;
+  }
+
+  .gallery img{
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+    border: 2px solid #0a20a0;
+  }
+
+  .gallery li {
+    margin-bottom: 1em;
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .gallery li:hover {
+    transform: scale(1.0221);
+  }
+  .gallery img {
+    display: block;
+    border-radius: 3px;
+  }
+  
+  .m-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    pointer-events: none;
+  }
+  .m-lightbox.is-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 101;
+    pointer-events: auto;
+  }
+  .m-lightbox__slider {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .m-lightbox__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .m-lightbox__slide img {
+    display: block;
+    max-width: calc(100vw - 2em);
+    max-height: 90vh;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  @media (min-width: 768px) {
+    .m-lightbox__slide img {
+      max-width: calc(100vw - 116px);
+      max-height: 90vh;
+    }
+  }
+  .m-lightbox__slide.is-loaded.is-active img {
+    opacity: 1;
+  }
+  .m-lightbox__slide.is-loaded.is-active .spinner {
+    display: none;
+  }
+  .m-lightbox button {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 102;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .m-lightbox__close {
+    top: 1em;
+    right: 1em;
+  }
+  .m-lightbox__nextPrev {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  .m-lightbox__nextPrev.is-active {
+    visibility: hidden;
+    transform: scale(1);
+    opacity: 1;
+  }
+  @media (min-width: 1024px) {
+    .m-lightbox__nextPrev.is-active {
+      visibility: visible;
+    }
+  }
+  .m-lightbox__nextPrev svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .m-lightbox__nextPrev--next {
+    right: 1em;
+  }
+  .m-lightbox__nextPrev--prev {
+    left: 1em;
+  }
+  .m-lightbox__nextPrev:hover {
+    cursor: pointer;
+  }
+  .m-lightbox__counter {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .spinner::before, .spinner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2s infinite ease-in-out;
+            animation: sk-bounce 2s infinite ease-in-out;
+  }
+  .spinner::after {
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
+/* gallery page css end */
+
+
 
 
 
@@ -1777,7 +1928,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner, .ds-graphic__container .container {
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
@@ -1970,7 +2121,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner, .ds-graphic__container .container{
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner{
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
