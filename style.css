@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
     padding: 0;
     max-width: 1600px;
-    color: #002155;
+    color: #122562;
     font-weight: 400;
 }
 
@@ -26,7 +26,7 @@ ul{
 
 .common-heading {
     text-align: center;
-    color: #002155;
+    color: #122562;
     font-size: 48px;
     font-weight: 900;
     margin-bottom: 20px;
@@ -34,14 +34,14 @@ ul{
 
 .secondary-heading {
     text-align: center;
-    color: #0a20a0;
+    color: #e31e24;
     font-size: 38px;
     font-weight: 800;
     margin: 30px 0px;
 }
 
 .secondary-color {
-    color: #0a20a0;
+    color: #122562;
 }
 
 .small-title{
@@ -107,7 +107,7 @@ ul{
 }
 
 .tj-menu-area li > a {
-    color: #0a20a0;
+    color: #122562;
     font-size: 16px;
     margin-left: 0;
     margin-right: 0;
@@ -115,7 +115,7 @@ ul{
 }
 
 .tj-menu-area li a{
-    color: #0a20a0;
+    color: #122562;
     font-size: 16px;
 }
 
@@ -229,10 +229,10 @@ ul{
 }
 
 .learn-more-btn {
-    color: #002155 !important;
+    color: #122562 !important;
     font-weight: 600;
     margin-bottom: 5px;
-    border-bottom: 2px solid #002155;
+    border-bottom: 2px solid #122562;
 }
 
 .menu-item-wrap {
@@ -309,7 +309,7 @@ ul{
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.3;
-    color: #002155;
+    color: #122562;
     position: relative;
 }
 
@@ -338,7 +338,7 @@ ul{
 }
 
 .login {
-    color: #0a20a0;
+    color: #122562;
     font-weight: 600;
 }
 
@@ -347,8 +347,8 @@ ul{
     font-weight: 700;
     border-radius: 26px;
     transition: all .3s;
-    background-color: #0a20a0;
-    border: 1px solid #0a20a0;
+    background-color: #122562;
+    border: 1px solid #122562;
     color: #fff;
     position: relative;
     width: max-content;
@@ -357,7 +357,7 @@ ul{
 
 .contact-btn:hover {
     background-color: #fff;
-    color: #0a20a0;
+    color: #122562;
 }
 
 .dropdown-grid{
@@ -401,7 +401,7 @@ ul{
     grid-template-columns: 6.5fr 5.5fr;
     column-gap: 20px;
     align-items: center;
-    border-bottom: 2px solid #fbdd4d;
+    border-bottom: 2px solid #029fe2;
 }
 
 .service-inner__container .container{
@@ -421,7 +421,7 @@ ul{
 }
 
 .left-home p{
-    color: #002155;
+    color: #122562;
     line-height: 2;
     font-size: 18px;
 }
@@ -522,13 +522,13 @@ ul{
 
 .secondary-heading span{
     font-weight: 500;
-    color: #002155;
+    color: #122562;
 }
 
 .services__container p{
     text-align: center;
     line-height: 1.8;
-    color: #002155;
+    color: #122562;
     font-size: 18px;
     width: 70%;
     margin: 0 auto;
@@ -642,7 +642,7 @@ ul{
 
 .why-choose__card a{
     display: block;
-    color: #002155;
+    color: #122562;
     transition: all .3s;
 }
 
@@ -695,7 +695,7 @@ ul{
     position: relative;
     flex: 0 0 100%;
     max-width: 100%;
-    color: #002155;
+    color: #122562;
     height: 560px;
 }
 
@@ -746,14 +746,14 @@ ul{
 }
 
 .blog-grid__item-content p, .blog-grid__item-content .blog-grid-a{
-    color: #002155;
+    color: #122562;
     opacity: 0;
     transition: all .5s;
 }
 
 .blog-grid__item:hover .blog-grid__item-content p, .blog-grid__item:hover .blog-grid__item-content .blog-grid-a{
     opacity: 1;
-    color: #002155;
+    color: #122562;
 }
 
 .blogs-grid__container .secondary-btn {
@@ -763,7 +763,7 @@ ul{
 
 
 .contact__banner {
-    background-color: #0a20a0;
+    background-color: #122562;
     padding: 80px 0px;
 }
 
@@ -810,7 +810,7 @@ ul{
 }
 
 .left__contact-page ul li span{
-    color: #0a20a0;
+    color: #122562;
     font-size: 20px;
 }
 
@@ -836,7 +836,7 @@ ul{
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
-    color: #002155;
+    color: #122562;
     line-height: 18px;
     letter-spacing: .2px;
     padding: 14px 20px;
@@ -876,13 +876,13 @@ ul{
 
 .footer__container .navigations ul li{
     padding: 5px 0px;
-    color: #002155;
+    color: #122562;
     font-weight: 600;
 }
 
 .footer__container .navigations ul li:hover a{
     transition: all .2s;
-    color: #0a20a0;
+    color: #122562;
 }
 
 
@@ -953,7 +953,7 @@ ul{
     height: 2px;
     width: 35px;
     display: block;
-    background: #002155;
+    background: #122562;
     cursor: pointer;
     list-style: none;
     margin: 8px 0;
@@ -994,7 +994,7 @@ ul{
   top:5px;
   right:15px;
   padding:7px 15px 0px 15px;
-  color:#002155;
+  color:#122562;
   border:0;
   font-size:3em;
   line-height:65px;
@@ -1007,9 +1007,9 @@ ul{
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none; padding-top: 80px;}
 .menu li {display: block;   padding:20px 0 20px 0;  font-weight: 700;}
 .menu li:hover{display: block;    background-color: #fff;}
-.menu ul li a { text-decoration:none;  margin: 0px; color:#002155;font-size: 14px;}
-.menu ul li a:hover {  color: #002155; text-decoration:none;}
-.menu a{text-decoration:none; color:#002155;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#122562;font-size: 14px;}
+.menu ul li a:hover {  color: #122562; text-decoration:none;}
+.menu a{text-decoration:none; color:#122562;}
 
 .nav__sub li{
     padding: 10px 0px !important;
@@ -1020,7 +1020,7 @@ ul{
 }
 
 .glyphicon-home{
-  color: #002155; 
+  color: #122562; 
   font-size:1.5em; 
   margin-top:5px; 
   margin:0 auto;
@@ -1033,7 +1033,7 @@ ul{
 
 .menu ul .nav__link {
 	font-weight: 600;
-	color: #002155;
+	color: #122562;
     /* font-family: 'myregularfont'; */
 	text-decoration: none;
 }
@@ -1045,7 +1045,7 @@ ul{
 	width: 100%;
     height: 100vh;
 	background-color: #fff;
-  color: #002155;
+  color: #122562;
 	opacity: 0;
 	display: none;
 	transition: all 0.35s ease-in-out;
@@ -1070,7 +1070,7 @@ ul{
     display: flex;
     margin: 0 auto;
     width: max-content;
-    border: 1px solid #002155;
+    border: 1px solid #122562;
     padding: 10px 20px !important;
     margin-top: 10px;
 }

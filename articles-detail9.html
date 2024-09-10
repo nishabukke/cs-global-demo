@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/img/isource-logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="pages.css">
+    <title>iSource India</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="header__container container-fluid">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/isource-logo.png" alt=""></a>
+            </div>
+
+            <div class="navigation tj-menu-area">
+                <nav id="mobile-menu">
+                    <ul class="main-nav">  
+                        <li><a href="index.html">Home</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Services <span class="fas fa-angle-down"></span></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="global-sourcing.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img src="assets/img/global-sourcing.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">Global Sourcing<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">CS Global: Your gateway to seamless global sourcing solutions.</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="procurement-consulting.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img src="assets/img/procurement-consulting.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">Procurement Consulting<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Streamlining your sourcing strategies for optimal efficiency.</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="design-solutions.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img src="assets/img/design-solution.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">Design Solutions<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Catalyst Sourcing provides next level engg support with the use of different types of latest machines.</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="qa-audits.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img width="50" height="44" src="assets/img/qa-adults.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">QA & Audits<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption"> Ensuring top-notch quality through rigorous inspection and audits.</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sc-ff.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img width="50" height="44" src="assets/img/sc-ff.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">Supply Chain & Freight Forwarding<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Seamlessly managing your logistics for timely delivery.</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sales-liasoning.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img width="50" height="44" src="assets/img/sales-liasoning.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">Sales Liasoning Services<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Bridging the gap between your products and the market, ensuring successful sales.</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="expediting.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img width="50" height="44" src="assets/img/expediting.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">Expediting and Project Management<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Expediting is a project-management activity implemented as part of the procurement process  in order to secure the timely delivery of goods and components.</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>   
+                        <li class="has-dropdown">
+                            <a href="#">Engaging Us <span class="fas fa-angle-down"></span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="casting-forging.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/casting-forging.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Casting & Forging<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Shaping metals with precision and strength for robust engineering solutions.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="precision-machining.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/precision-machining.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Precision Machining<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Crafting intricate components with accuracy and finesse for optimal performance.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="press-fabrication.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/fabrication.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Press Parts & Fabrication<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption"> Forming durable components through efficient pressing and fabrication techniques.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="plastic-rubber.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/plastic-rubber.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Plastic & Rubber<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Molding versatile materials into custom solutions for diverse applications.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="surface-treatment.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/surface-treatment.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Surface Treatment<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Enhancing durability and aesthetics through specialized finishing processes.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="extrusions.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/extrusions.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Extrusions<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Shaping materials into complex profiles for versatile applications with precision.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="poly-propylene.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/pp-mat.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Export Quality PolyPropylene mats ( PP Mats ) <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Advanced techniques deliver high-performance polypropylene mats with precision and durability.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="spring-fasteners.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/spring-fasteners.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Spring & Fasteners<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Reliable spring and fastener solutions for seamless assembly and performance.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li> 
+                        <li class="has-dropdown">
+                            <a href="#">Updates <span class="fas fa-angle-down"></span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="articles.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img width="50" height="44" src="assets/img/blog-icon.svg"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">Blogs<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Stay up to date on all things manufactured.</span></span>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news-events.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/news-events.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">News and Events<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Stay informed and connected with the latest news and events from CS Global.</span></span>
+                                            </div>
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="awards-achievment.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/awards-achievements.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Awards & Achievements<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Celebrating Excellence: Explore CS Global's Recognitions and Milestones.</span></span>
+                                            </div>
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/faq-icon.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">FAQ's<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Got questions? Find answers to common inquiries in our FAQ section.</span></span>
+                                            </div>
+                                            </a>
+                                    </li>
+                                </ul>
+                        </li> 
+                        <li class="has-dropdown">
+                            <a href="#">Company <span class="fas fa-angle-down"></span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="about.html">
+                                        <div class="menu-item-row">
+                                            <span class="menu-item-icon"><img width="50" height="44" src="assets/img/about-icon.png"></span>
+
+                                            <span class="menu-item-content"><span class="menu-item-title">About Us<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Discover the story behind CS Global and our commitment to engineering excellence.</span></span>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pre-engg.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/pre-engg.png"></span>
+    
+                                                <span class="menu-item-content"><span class="menu-item-title">Pre Engineered Building Solutions<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Efficient pre-engineered solutions for seamless integration and performance.</span></span>
+                                            </div>
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="industrial-fabrication.html">
+                                            <div class="menu-item-row">
+                                                <span class="menu-item-icon"><img width="50" height="44" src="assets/img/industrial-fabrication.png"></span>
+        
+                                                <span class="menu-item-content"><span class="menu-item-title">Industrial Fabrication<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6V4.4ZM13.4243 5.42426C13.6586 5.18995 13.6586 4.81005 13.4243 4.57574L9.60589 0.757359C9.37157 0.523045 8.99167 0.523045 8.75736 0.757359C8.52304 0.991674 8.52304 1.37157 8.75736 1.60589L12.1515 5L8.75736 8.39411C8.52304 8.62843 8.52304 9.00833 8.75736 9.24264C8.99167 9.47696 9.37157 9.47696 9.60589 9.24264L13.4243 5.42426ZM1 5.6H13V4.4H1V5.6Z" fill="#173261"></path></svg></span><span class="menu-item-caption">Expert industrial fabrication for precision engineering solutions.</span></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>  
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-header">
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+        </div>
+    </header>
+       
+    <div class="mobile-header">
+        <div class="container mobile-menu-container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/isource-logo.png" alt=""></a>
+            </div>
+            <div class="mobile-menu">
+                <a class="canva_expander nav-menu-link menu-button" href="#">
+                    <span class="dot1"></span>
+                    <span class="dot2"></span>
+                    <span class="dot3"></span>
+                    <span class="dot4"></span>
+                </a>
+                <button class="cross">&#735;</button>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="nav__submenu">Services <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="global-sourcing.html">Global Sourcing</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="procurement-consulting.html">Procurement Consulting</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="design-solutions.html">Design Solutions</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="qa-audits.html">QA & Audits</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="sc-ff.html">Supply Chain & Freight Forwarding</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="sales-liasoning.html">Sales Liasoning Services</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="expediting.html">Expediting & project Management</a>
+                        </li>
+                    </ul>
+                </a>
+                </li>
+                <li><a href="#" class="nav__submenu">Engaging Us <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="casting-forging.html">Casting & Forging</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="precision-machining.html">Precision Machining</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="press-fabrication.html">Press Parts & Fabrication</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="plastic-rubber.html">Plastic & Rubber</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="surface-treatment.html">Surface Treatment</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="extrusions.html">Extrusions</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="poly-propylene.html">Export Quality PolyPropylene Mats (PP Mats)</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="spring-fasteners.html">Spring & Fasteners</a>
+                        </li>
+                    </ul>
+                </a>
+                </li>
+                <li><a href="#" class="nav__submenu">Updates <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="articles.html">Blogs</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="news-events.html">News & Events</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="awards-achievment.html">Awards & Achievements</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="faq.html">FAQ's</a>
+                        </li>
+                    </ul>
+                </a>
+                </li>
+                <li><a href="#" class="nav__submenu">Company <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="pre-engg.html">Pre Engineered Solutions</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="industrial-fabrication.html">Industrial Fabrication</a>
+                        </li>
+                    </ul>
+                </a>
+                </li>
+                <li class="contact-btn-mobile"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div> 
+            </div>
+        </div>
+    </div>
+
+    <main class="site-content">
+        <section class="blog-header-banner container section--lg">
+            <img src="assets/img/srm-blog9.png" alt="">
+
+            <div class="blog-content-title">
+                <h5>SUPPLIER RELATIONSHIP MANAGEMENT</h5>
+                <h4 class="text-start">Building Strong Supplier Relationships: The Key to Long-Term Business Success</h4>
+            </div>
+
+            <div class="blog-content-desc">
+                <p>In today’s globalized market, <b>Supplier Relationship Management (SRM)</b> plays a pivotal role in determining the success of any business. Managing your relationship with suppliers is not just about securing the best price—it’s about fostering trust, ensuring quality, and building long-term partnerships that can adapt to market changes and business growth.</p>
+
+                <p>Whether you’re sourcing products locally or internationally, having a robust SRM strategy can significantly impact your operations, product quality, and overall business efficiency. At iSource India, we believe that successful supplier relationships are the cornerstone of smooth supply chains, consistent product quality, and sustainable business growth.</p>
+
+                <p>Here’s a guide to understanding Supplier Relationship Management and how to optimize it for long-term success.</p>
+
+                <h2 class="blogs-title">What is Supplier Relationship Management (SRM)?</h2>
+
+                <p>Supplier Relationship Management is a strategic approach to managing an organization’s interactions with the suppliers that provide goods and services. The goal of SRM is to streamline and enhance these relationships to maximize the value derived from supplier partnerships.</p>
+
+                <p>SRM isn’t just about transactions. It’s about collaboration, continuous improvement, and creating value for both your business and your suppliers. Companies that excel in SRM focus on fostering relationships that go beyond price negotiations, involving joint innovation, risk mitigation, and shared long-term goals.</p>
+
+                <h2 class="blogs-title">Why Is SRM Important?</h2>
+
+                <p>The importance of SRM goes beyond the immediate benefits of reducing costs or ensuring timely deliveries. Effective SRM leads to a range of advantages that position businesses to thrive in competitive markets:</p>
+
+                <div class="small-title">1. Consistent Quality</div>
+
+                <p>Strong supplier relationships help ensure that your suppliers understand your quality standards and consistently meet them. This reduces the risk of defects and production delays.</p>
+
+                <div class="small-title">2. Supply Chain Resilience</div>
+
+                <p>Suppliers who are invested in your business are more likely to support you during challenging times, whether it’s adapting to market fluctuations or addressing disruptions in the supply chain.</p>
+
+                <div class="small-title">3. Innovation and Collaboration</div>
+
+                <p>Suppliers can be key partners in innovation. By working closely with them, you can develop new products, improve existing processes, and gain access to emerging technologies or materials.</p>
+
+                <div class="small-title">4. Cost Optimization</div>
+
+                <p>SRM isn’t about short-term cost reductions—it’s about optimizing costs through long-term partnerships that enable volume discounts, improved efficiencies, and better financial terms.</p>
+
+                <div class="small-title">5. Risk Management</div>
+
+                <p>Strong supplier relationships help identify potential risks early on. With open communication, both parties can work together to mitigate risks such as supply chain interruptions, quality issues, or regulatory changes.</p>
+
+                <h2 class="blogs-title">Key Elements of Effective Supplier Relationship Management</h2>
+
+                <p>At iSource India, we emphasize that successful SRM requires more than just selecting a supplier and signing a contract. Here are some of the core elements we focus on when managing supplier relationships:</p>
+
+                <div class="small-title">1. Open and Transparent Communication</div>
+                
+                <p>Open communication is the foundation of a strong supplier relationship. Regular updates on production timelines, quality expectations, and order volumes help ensure that both parties are aligned. By maintaining clear lines of communication, potential issues can be addressed proactively rather than reactively.
+                </p>
+
+                <p>At iSource India, we prioritize transparent, ongoing dialogue with all our suppliers, ensuring that expectations are clearly understood from the beginning.</p>
+
+                <div class="small-title">2. Mutual Trust and Respect</div>
+                
+                <p>Trust is built over time through reliability, consistency, and integrity. Suppliers should trust that you will honor your agreements, while you should trust that they will deliver on their commitments. Mutual respect is crucial for navigating challenges and finding solutions together.</p>
+
+                <p>We view our suppliers as long-term partners, fostering trust and respect through consistent collaboration and ethical practices.</p>
+
+                <div class="small-title">3. Supplier Performance Evaluation</div>
+
+                <p>A key aspect of SRM is continuously monitoring supplier performance. This involves tracking key metrics such as delivery times, product quality, compliance with regulations, and cost efficiency. Regular performance reviews help ensure that suppliers are meeting your expectations and provide an opportunity to discuss areas for improvement.</p>
+                
+                <p>At iSource India, we conduct regular performance audits to ensure our suppliers adhere to the highest standards, allowing us to maintain superior quality control for our clients.</p>
+
+                <div class="small-title">4. Collaboration and Joint Problem Solving</div>
+
+                <p>Instead of viewing suppliers as separate entities, treat them as extensions of your team. Collaborative problem solving, especially during production challenges or supply chain disruptions, strengthens relationships and leads to better outcomes.</p>
+
+                <p>We work hand-in-hand with our suppliers to tackle any challenges that arise, ensuring quick resolution and minimal impact on production.</p>
+
+                <div class="small-title">5. Long-Term Strategic Alignment</div>
+
+                <p>The best supplier relationships are those that are built for the long haul. This involves ensuring that your suppliers’ long-term goals align with yours, whether it’s regarding sustainability, innovation, or market growth. A shared vision leads to stronger collaboration and a more resilient partnership.</p>
+
+                <p>Our approach at iSource India is to create sustainable partnerships that evolve with market demands, technological advancements, and shifting consumer preferences.</p>
+
+                <h2 class="blogs-title">Best Practices for Supplier Relationship Management</h2>
+                <p>To implement effective SRM in your business, consider these best practices:                </p>
+
+                <div class="small-title">1. Segment Suppliers</div>
+
+                <p>Not all suppliers are equal. Segment them based on their importance to your business, focusing more on strategic partners who provide essential or high-value products.
+                </p>
+
+                <div class="small-title">2. Invest in Relationships</div>
+                <p>SRM is a long-term commitment. Invest time and resources in building strong relationships, whether through regular meetings, performance reviews, or collaboration on projects.</p>
+
+                <div class="small-title">3. Leverage Technology</div>
+                <p>Use SRM tools and software to manage supplier data, track performance, and streamline communication. This will help you stay on top of supplier interactions and ensure nothing falls through the cracks.</p>
+
+                <div class="small-title">4. Provide Feedback</div>
+                <p>Constructive feedback is key to continuous improvement. Let your suppliers know how they’re performing and where they can improve to better support your business.</p>
+
+                <div class="small-title">5. Focus on Continuous Improvement</div>
+                <p> SRM isn’t static—keep looking for ways to improve your relationships, processes, and outcomes. By continuously evolving, you’ll stay ahead of the competition.</p>
+
+                <div class="small-title">The Field expediting can perform in two types.</div>
+                <p><strong>Periodic Expediting and Field Expediting</strong></p>
+
+                <h2 class="blogs-title">The iSource India Approach to Supplier Relationship Management</h2>
+
+                <p>At iSource India, we’ve built a robust SRM framework that focuses on creating long-lasting, mutually beneficial relationships with our suppliers. Here’s how we do it:</p>
+
+                <p>● Ethical Sourcing Practices: We only work with suppliers who share our commitment to ethical practices, including fair wages, safe working conditions, and sustainable manufacturing processes.</p>
+                <p>● Tailored Supplier Selection: We take the time to understand your specific product needs and connect you with suppliers that meet your exact specifications, ensuring optimal quality and cost-effectiveness.</p>
+                <p>● Quality Assurance: Our multi-tiered quality control process ensures that suppliers meet international standards, and we collaborate closely with them to maintain consistency throughout production.</p>
+
+                <p>With over 20 years of experience in sourcing from India, we know that strong supplier relationships are essential for maintaining product quality, on-time deliveries, and long-term success.</p>
+
+                <p>#SupplierRelationshipManagement #SRM #ProductSourcing #SupplyChainOptimization #ISourceIndia #BusinessGrowth #SupplierCollaboration #GlobalSupplyChain #ProcurementStrategy #QualityControl</p>
+
+                <p>By focusing on strategic partnerships and mutual growth, Supplier Relationship Management becomes a powerful tool for enhancing business performance. At iSource India, we’ve mastered the art of building supplier relationships that deliver long-term value, driving success for both our clients and our trusted suppliers.</p>
+            </div>
+        </section>
+
+        <section class="related-blog__container section--lg">
+            <div class="container">
+                <h2 class="secondary-heading"><span>Related </span>Blog</h2>
+                <div class="blogs-grid__inner">
+                    <div class="blog-grid__item">
+                        <a href="articles-detail.html">
+                            <div class="blog-grid__item-img">
+                                <img src="assets/img/blog-main.png" alt="">
+                            </div>
+                            <div class="blog-grid__item-content">
+                                <div>
+                                    <h5>CS Global NEWS</h5>
+                                <h4 class="text-start">Product Updates: What’s Ahead for CS Global Customers in 2024</h4>
+                                <p>At CS Global, we provide engineering tools tailored for enterprise manufacturing and DTC brands seeking to enhance productivity, innovation, and profitability. Stay tuned for what's in store this year</p>
+                                <a href="articles-detail.html" class="blog-grid-a">Learn more <span class="fas fa-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-grid__item">
+                        <a href="articles-detail.html">
+                            <div class="blog-grid__item-img">
+                                <img src="assets/img/blog-main.png" alt="">
+                            </div>
+                            <div class="blog-grid__item-content">
+                                <div>
+                                    <h5>CS Global NEWS</h5>
+                                <h4 class="text-start">Product Updates: What’s Ahead for CS Global Customers in 2024</h4>
+                                <p>At CS Global, we provide engineering tools tailored for enterprise manufacturing and DTC brands seeking to enhance productivity, innovation, and profitability. Stay tuned for what's in store this year</p>
+                                <a href="articles-detail.html" class="blog-grid-a">Learn more <span class="fas fa-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-grid__item">
+                        <a href="articles-detail.html">
+                            <div class="blog-grid__item-img">
+                                <img src="assets/img/blog-main.png" alt="">
+                            </div>
+                            <div class="blog-grid__item-content">
+                                <div>
+                                    <h5>CS Global NEWS</h5>
+                                <h4 class="text-start">Product Updates: What’s Ahead for CS Global Customers in 2024</h4>
+                                <p>At CS Global, we provide engineering tools tailored for enterprise manufacturing and DTC brands seeking to enhance productivity, innovation, and profitability. Stay tuned for what's in store this year</p>
+                                <a href="articles-detail.html" class="blog-grid-a">Learn more <span class="fas fa-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container container-fluid">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/isource-logo.png" alt=""></a>
+            </div>
+
+            <div class="navigations">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="about.html">Company</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="global-sourcing.html">Global Sourcing</a></li>
+                    <li><a href="procurement-consulting.html">Procurement Consulting</a></li>
+                    <li><a href="design-solutions.html">Design Solutions</a></li>
+                    <li><a href="expediting.html">Expediting & Project Management</a></li>
+                </ul>
+                <ul>
+                    <li><a href="qa-audits.html">QA & Audits</a></li>
+                    <li><a href="sc-ff.html">Supply Chain & Freight Forwarding</a></li>
+                    <li><a href="sales-liasoning.html">Sales Liasoning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="social-accounts">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div> -->
+        </div>
+
+        <div class="copyright container-fluid">
+            <p>© 2024 CS Global all rights reserved</p>
+            <p>Designed by Nspiresoft LLP</p>
+        </div>
+    </footer>
+    
+
+    <!-- script -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
