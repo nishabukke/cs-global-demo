@@ -497,6 +497,21 @@
     <!-- script -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+      document.querySelector(
+          "body").style.visibility = "hidden";
+      document.querySelector(
+          "#preloader").style.visibility = "visible";
+  } else {
+      document.querySelector(
+          "#preloader").style.display = "none";
+      document.querySelector(
+          "body").style.visibility = "visible";
+  }
+  };
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
