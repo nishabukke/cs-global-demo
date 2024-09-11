@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+#preloader{
+    background:  url('assets/img/loader.gif') no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+  }
+
 
 body {
     font-family: "Inter", sans-serif;
@@ -415,7 +425,7 @@ ul{
 }
 
 .left-home h1{
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 1.2;
 }
