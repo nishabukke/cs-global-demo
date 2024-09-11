@@ -1050,6 +1050,10 @@ ul{
     border-radius: 15px;
 }
 
+.peb-product-img img{
+    height: 450px;
+}
+
 
 /* AWARDS AND ACHIEVEMENTS CSS START */
 
@@ -1238,7 +1242,7 @@ ul{
 }
 
 .if-product__container .third-party__item:not(:last-child)::before {
-    height: 1050px;
+    height: 750px;
 }
 
 .fs__container .third-party__item, .fab__container .third-party__item, .st__container .third-party__item{
@@ -1560,7 +1564,6 @@ ul{
 .left-blog-main img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -1660,8 +1663,6 @@ ul{
 .blog-grid__item-img img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
 }
 .blog-grid__item-content {
     display: flex;

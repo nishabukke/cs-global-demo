@@ -50,6 +50,10 @@ ul{
     margin: 30px 0px;
 }
 
+.red-font{
+    color: #e31e24;
+}
+
 .secondary-color {
     color: #122562;
 }
@@ -425,7 +429,7 @@ ul{
 }
 
 .left-home h1{
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 900;
     line-height: 1.2;
 }
@@ -685,8 +689,26 @@ ul{
     line-height: 2;
 }
 
-.related-blog__container {
+.related-blog__container, .articles__container {
     background-color: #f0f8ff;
+}
+
+.youtube-linkedin-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.youtube-links, .linkedin-posts{
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    padding: 30px;
+}
+
+.youtube-links ul li, .linkedin-posts ul li{
+    margin: 10px 0px;
 }
 
 
@@ -1140,7 +1162,7 @@ ul{
         font-size: 12px;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .blogs-grid__inner, .manufacturing-inner {
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .blogs-grid__inner, .manufacturing-inner, .youtube-linkedin-links {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
@@ -1258,7 +1280,7 @@ ul{
         font-size: 12px;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container {
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .youtube-linkedin-links {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
