@@ -536,6 +536,24 @@ ul{
     border-bottom: 2px solid #abb8c3;
 }
 
+.contact-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+
+.contact-details p{
+    font-size: 16px;
+}
+
+.contact-details b{
+    font-size: 18px;
+}
+
+.contact-input label{
+    font-weight: 600;
+}
+
 /* FOOTER */
 
 .footer__container{
@@ -582,7 +600,13 @@ ul{
     padding: 0px 20px 20px 20px;
 }
 
-.copyright p{
+.keywords{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+}
+
+.copyright p, .keywords p{
     margin: 0;
     color: grey;
 }
@@ -2008,7 +2032,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .product-list-peb, .exhibition-photos, .news_blog , .youtube-linkedin-links{
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .product-list-peb, .exhibition-photos, .news_blog , .youtube-linkedin-links, .contact-details{
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
@@ -2201,7 +2225,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .exhibition-photos, .news_blog, .youtube-linkedin-links{
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .exhibition-photos, .news_blog, .youtube-linkedin-links, .contact-details{
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
