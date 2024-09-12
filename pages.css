@@ -2032,7 +2032,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .product-list-peb, .exhibition-photos, .news_blog , .youtube-linkedin-links, .contact-details{
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .service-inner__container .container, .who-we-serve__container .container, .benefits-of-service, .blog-main__inner .container, .blogs-grid__inner, .manufacturing__content-inner, .work-flow-inner, .expediting-content-inner, .awards-photos-inner, .awards-photos-inner-lower, .pre-engg-inner, .pre-why-choose-inner, .if-vision-mission-inner, .if__why-choose .why-choose__grid, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .product-list-peb, .exhibition-photos, .news_blog , .youtube-linkedin-links, .contact-details, .advantages-gs, .key-points__container .container, .key-points-pc__container .cards__container, .sc-ff .benefits-of-service, .manufacturing__content-inner.casting-forging{
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
@@ -2225,7 +2225,7 @@ display: block;
         width: 100%;
     }
 
-    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .exhibition-photos, .news_blog, .youtube-linkedin-links, .contact-details{
+    .cards__container, .industries__item, .why-choose__grid, .home__container, .about__container .container, .about-content__container .container, .contact-page__container .container-fluid, .if-vision-mission-inner, .if-product-inner, .ds-graphic__container .container, .gallery ul, .truly-global-inner, .exhibition-photos, .news_blog, .youtube-linkedin-links, .contact-details, .advantages-gs, .key-points__container .container, .key-points-pc__container .cards__container, .sc-ff .benefits-of-service, .manufacturing__content-inner.casting-forging{
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
@@ -2352,7 +2352,7 @@ display: block;
         padding: clamp(1rem, 2vw, 1rem) 0;
     }
 
-    .third-party__item , .fab__container .third-party__item, .st__container .third-party__item, .sf__container .third-party__item, .if__container .third-party__item, .if-product__container .third-party__item{
+    .third-party__item , .fab__container .third-party__item, .st__container .third-party__item, .sf__container .third-party__item, .if__container .third-party__item, .if-product__container .third-party__item, .fs__container .third-party__item{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0 clamp(1rem, 4.5138888889vw, 4rem);
@@ -2362,8 +2362,14 @@ display: block;
         margin-top: 25px;
     }
 
-    .navigations ul{
+    .navigations ul, .gallery ul{
         padding: 0;
+    }
+
+    .exhibition-photos img {
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
 
     .copyright p{
